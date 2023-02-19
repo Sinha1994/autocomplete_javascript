@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2em;
+    padding: 2em;
+}
+main h2 {
+    text-align: center;
+    align-items: center;
+    margin: 2em 0;
+}
+table, th, td {
+    border: 1px solid #b2b2b2;
+}
+table thead tr th, td{
+    margin: 1em 0;
+    padding: 1.5em;
+    text-align: center;
+    align-items: center;
+}
+.autocomplete {
+ display: flex;
+ flex-direction: column;
+ position: relative;
+}
+.autocomplete input{
+    padding: 8px;
+    margin: 5px 5px 0;
+    width: 25rem;
+}
+.selectOption {
+    padding: 8px;
+    margin: 0 5px;
+    border: 1px solid #b2b2b2;
+    display: none;
+}
+.selectOption option{
+    padding: 0.2rem;
+    cursor: pointer;
+}
+.selectOption option:not(:last-child){
+    border-bottom: 1px solid #b2b2b2;
+}
+.selectOption option:hover{
+  font-weight: bold;
+}

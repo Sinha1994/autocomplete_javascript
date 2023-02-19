@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autocomplete</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h4>Search User here...</h4>
+      <form>
+        <div class="autocomplete">
+          <input type="text" onkeydown="renderOptionsList()" />
+          <div id="searchResult" class="selectOption">
+            <!-- <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option> -->
+          </div>
+        </div>
+      </form>
+      <main>
+        <h2>Users List</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Id</th>
+              <th>Name</th>
+              <th>User Name</th>
+              <th>Email</th>
+              <th>City</th>
+              <th>Company</th>
+            </tr>
+          </thead>
+        </table>
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
